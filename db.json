@@ -1,0 +1,109 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "Orange",
+      "price": 50,
+      "image": "/assets/images/fruit-product-5.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Custard Apple",
+      "price": 150,
+      "image": "/assets/images/fruit-product-7.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Passion-fruit",
+      "price": 180,
+      "image": "/assets/images/fruit-product-8.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Blackberry",
+      "price": 260,
+      "image": "/assets/images/fruit-product-1.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Leather Bracelet",
+      "price": 110,
+      "image": "/assets/images/crap2t.jpg"
+    },
+    {
+      "id": "6",
+      "title": "Basket",
+      "price": 600,
+      "image": "/assets/images/crapt.jpg"
+    },
+    {
+      "id": "7",
+      "title": "Light Holder",
+      "price": 400,
+      "image": "/assets/images/crapt3.jpg"
+    },
+    {
+      "id": "8",
+      "title": "Towel",
+      "price": 130,
+      "image": "/assets/images/crapt4.jpg"
+    },
+    {
+      "id": "9",
+      "title": "Yellow Chair",
+      "price": 1600,
+      "image": "/assets/images/furniture-product-4-331x443.jpg"
+    },
+    {
+      "id": "10",
+      "title": "Wood Drawer",
+      "price": 2000,
+      "image": "/assets/images/furniture-product-7-331x443.jpg"
+    },
+    {
+      "id": "11",
+      "title": "Round Table",
+      "price": 4000,
+      "image": "/assets/images/furniture-product-2-331x443.jpg"
+    },
+    {
+      "id": "12",
+      "title": "Mini Table",
+      "price": 1500,
+      "image": "/assets/images/furniture-product-3-331x443.jpg"
+    },
+    {
+      "id": "13",
+      "title": "Winter Jumber",
+      "price": 300,
+      "image": "/assets/images/03-270x345.jpg"
+    },
+    {
+      "id": "14",
+      "title": "Jacket",
+      "price": 600,
+      "image": "/assets/images/flone-fashion17-270x345 (1).jpg"
+    },
+    {
+      "id": "15",
+      "title": "Sunglass",
+      "price": 200,
+      "image": "/assets/images/flone-fashion10-270x345.jpg"
+    },
+    {
+      "id": "16",
+      "title": "Night Dress",
+      "price": 270,
+      "image": "/assets/images/flone-fashion19-270x345.jpg"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": "28f5",
+      "firstName": "Athiban",
+      "lastName": "M",
+      "email": "athiban2322001@gmail.com",
+      "message": "hi"
+    }
+  ]
+}

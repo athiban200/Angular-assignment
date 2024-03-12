@@ -1,0 +1,104 @@
+<div class="header">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-4">
+        <div class="container-fluid">
+            <a class="navbar-brand">LOGO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/feedback">Feedback</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a routerLink="cart" class="position-relative">
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            {{totalItem}}
+                            <span class="visually-hidden"></span>
+                        </span>
+                        <i style="font-size: 20px;" class="bi bi-cart"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<ng-container *ngIf="products.length !=0">
+    <div class="container mb-5">
+        <div class="section-title text-center mt-5 mb-5">
+            <h2>MY CART</h2>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="table-content table-responsive cart-table-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>Image</th>
+                                <th>Product Name</th>
+                                <th>Unit Price</th>
+                                <th>action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let item of products; let i = index">
+                                <td>{{i+1}}</td>
+                                <td class="product-thumbnail">
+                                    <a><img class="img-fluid" src="{{item.image}}" alt="" /></a>
+                                </td>
+                                <td class="product-name text-center"><b>{{ item.title }}</b>
+                                </td>
+                                <td class="product-price-cart">
+                                    <span class="amount">₹ {{item.price}}</span>
+                                </td>
+                                <td class="product-remove">
+                                    <button (click)="removeItem(item)">
+                                        <i class="bi bi-x-square"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"></td>
+                                <td colspan="1">
+                                    <strong>
+                                        <h5>Total : ₹ {{grandTotal}}</h5>
+                                    </strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button (click)="emptycart()" class="btn btn-danger">Empty Cart</button>
+            <button class="btn btn-primary" routerLink="/">Shop More</button>
+        </div>
+    </div>
+</ng-container>
+
+
+
+<ng-container *ngIf="products.length ==0">
+    <div class="container">
+        <div class="section-title text-center mt-5">
+            <h2>MY CART</h2>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90"
+                alt="">
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now</h6>
+            <button routerLink="/" class="btn btn-primary">Shop Now</button>
+        </div>
+    </div>
+</ng-container>
