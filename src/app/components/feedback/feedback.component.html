@@ -1,8 +1,8 @@
-<div class="container">
-  <form class="border p-3 rounded-3" [formGroup]="form" (ngSubmit)="onSubmit()">
+<!-- <div class="container">
+  <form class="border p-3 rounded-3" [formGroup]="form">
     <div class="row g-0">
       <div class="col text-center p-2 mb-3 bg-light">
-        <span class="fs-3">Feeback Form</span>
+        <span class="fs-3">FEEDBACK FORM</span>
       </div>
     </div>
 
@@ -45,4 +45,32 @@
       </div>
     </div>
   </form>
-</div>
+</div> -->
+
+
+
+
+
+<section class="section">
+  <div class="contact-container">
+    <div class="box">
+      <form class="contact-left">
+        <div class="contact-left-title">
+          <h2>Feedback</h2>
+          <hr>
+        </div>
+        <input type="text" name="name" placeholder="*Full Name" class="contact-inputs">
+        <input type="email" name="email" placeholder="*Email " class="contact-inputs">
+        <textarea name="msg" id="" placeholder="*Comment..." class="contact-inputs"></textarea>
+        <button class="btn" type="submit">Submit<i class="bi bi-arrow-right-circle"></i></button>
+      </form>
+    </div>
+    
+
+    <div class="contact-right">
+      <img src="assets/images/right_img.png">
+    </div>
+  </div>
+</section>
+
+<!-- <button class="btn">Hover Me!</button> -->

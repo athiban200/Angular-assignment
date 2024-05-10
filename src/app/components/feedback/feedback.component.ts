@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { CartService } from 'src/app/service/cart.service';
 
 @Component({
   selector: 'app-feedback',
@@ -11,7 +10,7 @@ export class FeedbackComponent {
   form!: FormGroup;
   submitted = false;
 
-  constructor(private formBuilder: FormBuilder, private service: CartService) { }
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group(
@@ -24,19 +23,19 @@ export class FeedbackComponent {
     );
   }
 
-  onSubmit(): void {
-    this.submitted = true;
+  // onSubmit(): void {
+  //   this.submitted = true;
 
-    if (this.form.invalid) {
-      return;
-    } else {
-      this.service.submitFeedback(this.form.value)
-        .subscribe(
-          (response) => {
-          },
-          (error) => {
-          }
-        );
-    }
-  }
+  //   if (this.form.invalid) {
+  //     return;
+  //   } else {
+  //     this.service.submitFeedback(this.form.value)
+  //       .subscribe(
+  //         (response) => {
+  //         },
+  //         (error) => {
+  //         }
+  //       );
+  //   }
+  // }
 }

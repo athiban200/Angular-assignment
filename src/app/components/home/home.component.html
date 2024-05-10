@@ -15,16 +15,10 @@
                     <li class="nav-item">
                         <a class="nav-link" routerLink="/feedback">Feedback</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/sign-up">Sign-up</a>
+                    </li>
                 </ul>
-                <form class="d-flex" role="search">
-                    <a routerLink="cart" class="position-relative">
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                            {{totalItem}}
-                            <span class="visually-hidden"></span>
-                        </span>
-                        <i style="font-size: 20px;" class="bi bi-cart"></i>
-                    </a>
-                </form>
             </div>
         </div>
     </nav>
@@ -42,16 +36,8 @@
             <img>
         </div>
     </div>
-    <div class="row">
-        <div class=" col-md-3" *ngFor="let item of products">
-            <div class="card mb-5 p-3">
-                <img src="{{item.image}}" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{item.title}}</h5>
-                    <p class="card-text">₹ {{item.price}}</p>
-                    <a class="btn btn-primary" (click)=addtocart(item)><i class="bi bi-cart2"></i> Add</a>
-                </div>
-            </div>
-        </div>
+    <div class="buttons">
+        <button class="button" routerLink="/sign-up">Sign-up</button>
+        <button class="button" routerLink="/feedback">Feedback</button>
     </div>
 </div>
